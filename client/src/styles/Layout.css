@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.layout-header {
+  width: 100%;
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+.layout-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.layout-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.layout-nav-item {
+  font-size: 18px;
+}
+
+.layout-nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.layout-nav-item a:hover {
+  background-color: #0056b3;
+}
+
+.layout-user-info {
+  text-align: center;
+  margin: 20px 0;
+}
+
+main {
+  flex: 1;
+}
+
+.layout-footer {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  min-height: 10%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 40px; /* Установите нужный размер логотипа */
+}
+
+.footer-text {
+  margin: 0;
+}

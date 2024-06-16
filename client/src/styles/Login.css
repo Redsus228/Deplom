@@ -1,0 +1,83 @@
+/* Стили для контейнера */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  position: relative;
+}
+
+/* Стили для формы входа */
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.login-form .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-form .actions a {
+  width: 48%;
+}
+
+.login-form .actions button {
+  width: 100%;
+  margin: 0 5px; /* Добавляем отступы между кнопками */
+}
+
+.login-form .actions .secondary {
+  margin-right: 10px; /* Отступ справа для кнопки "Регистрация" */
+}
+
+.login-form .actions .primary {
+  margin-left: 10px; /* Отступ слева для кнопки "Войти" */
+}
+
+.login-form .policy {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Стили для футера */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  display: none; /* Скрываем футер */
+}
+
+.footer.show {
+  display: block; /* Показываем футер при необходимости */
+}

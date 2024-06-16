@@ -1,0 +1,48 @@
+.lection-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.lection-details {
+    width: 60%;
+}
+
+.test-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-test-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.create-test-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-test-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-test-form button:hover {
+    background-color: #0056b3;
+}
+
+.lection-body {
+    white-space: pre-wrap; /* Сохраняем переносы строк и пробелы */
+    word-wrap: break-word; /* Переносим слова, если они слишком длинные */
+}

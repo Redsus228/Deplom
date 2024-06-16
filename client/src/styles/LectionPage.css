@@ -1,0 +1,125 @@
+.lection-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.lection-list {
+    width: 60%;
+}
+
+.create-lection-form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lecture-cards-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lecture-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.lection-item {
+    position: relative;
+    width: 100%;
+    height: auto; /* Высота будет зависеть от содержимого */
+    background-image: url('../images/lec-item.jpg'); /* Укажите правильный путь к изображению */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Убедитесь, что изображение не выходит за пределы контейнера */
+    border-radius: 8px; /* Добавьте скругленные углы, если необходимо */
+    padding: 20px; /* Добавьте отступы, если необходимо */
+    box-sizing: border-box; /* Учитываем отступы в общей ширине и высоте */
+}
+
+.lection-title {
+    font-size: 1.5em; /* Размер шрифта */
+    font-weight: bold;
+    text-align: center;
+    color: black; /* Цвет текста */
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон для улучшения читаемости текста */
+    padding: 10px;
+    border-radius: 4px;
+    width: auto; /* Ширина текста будет зависеть от содержимого */
+    max-width: 90%; /* Ограничиваем максимальную ширину */
+    box-sizing: border-box; /* Учитываем отступы в общей ширине */
+    word-wrap: break-word; /* Переносим слова, если они слишком длинные */
+    white-space: pre-wrap; /* Сохраняем переносы строк и пробелы */
+}
+
+.lection-theme {
+    font-size: 1.0em; /* Размер шрифта */
+    font-weight: bold;
+    text-align: center;
+    color: black; /* Цвет текста */
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон для улучшения читаемости текста */
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%; /* Ширина текста будет занимать всю ширину контейнера */
+    box-sizing: border-box; /* Учитываем отступы в общей ширине */
+}
+
+.lecture-card-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.lecture-card-link:hover {
+    text-decoration: underline;
+}
+
+.create-lection-form {
+    width: 35%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.create-lection-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.create-lection-form input[type="text"],
+.create-lection-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-lection-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.create-lection-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-lection-form button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,86 @@
+.test-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.test-details .test-info,
+.test-details .questions-section {
+    width: 48%;
+}
+
+.test-details input,
+.test-details textarea,
+.test-details select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.test-details button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.test-details button:hover {
+    background-color: #0056b3;
+}
+
+.test-details .questions-list {
+    margin-top: 20px;
+    list-style-type: none; /* Убираем точки списка */
+    padding: 0;
+}
+
+.test-details .questions-list li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.test-details .question-item {
+    display: flex;
+    align-items: center; /* Выровнять элементы по центру по вертикали */
+    margin-bottom: 10px;
+    justify-content: flex-start; /* Выровнять элементы по левой стороне */
+}
+
+.test-details .question-item input[type="radio"] {
+    margin-right: 10px;
+    align-self: center; /* Выровнять радио-кнопку по центру контейнера */
+}
+
+.test-details .question-item span {
+    flex: 1;
+    text-align: left; /* Выровнять текст по левой стороне */
+    align-self: center; /* Выровнять текст по центру по вертикали */
+}
+
+.test-details .questions-list li ul {
+    padding-left: 0; /* Убираем отступы вложенного списка */
+}
+
+.test-details .questions-list li ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.test-details .question-text {
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Переносим слова, если они слишком длинные */
+    text-align: left; /* Выровнять текст по левой стороне */
+}
